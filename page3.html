@@ -8,7 +8,7 @@
     function onclick(){
     if (/(iPhone|iPad)/.test(navigator.userAgent)) {
     try {
-    window.webkit.messageHandlers.showBackButton.postMessage('true');
+    window.webkit.messageHandlers.showBackButton.postMessage('false');
         //'true' or 'false'
      } catch {
      console.log('IOS native context does not exist');
