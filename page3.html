@@ -8,13 +8,15 @@
 <script>
     function myclick(){
     if (/(iPhone|iPad)/.test(navigator.userAgent)) {
+           alert("iPhone|iPadiPhone1")
     try {
     window.webkit.messageHandlers.showBackButton.postMessage('false');
         //'true' or 'false'
      } catch {
      console.log('IOS native context does not exist');
+            alert("iPhone|iPadiPhone2")
      }
-     alert("iPhone|iPadiPhone|iPadiPhone|iPad")
+  
     } 
 }
 </script>
