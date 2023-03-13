@@ -7,7 +7,6 @@
 <button onclick="myclick()">點擊</button>
 <script>
     function myclick(){
-        alert("iPhone|iPadiPhone|iPadiPhone|iPad")
     if (/(iPhone|iPad)/.test(navigator.userAgent)) {
     try {
     window.webkit.messageHandlers.showBackButton.postMessage('false');
@@ -15,7 +14,8 @@
      } catch {
      console.log('IOS native context does not exist');
      }
-        } 
+     alert("iPhone|iPadiPhone|iPadiPhone|iPad")
+    } 
 }
 </script>
 </body>
